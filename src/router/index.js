@@ -10,6 +10,7 @@ const router = new Router({
     routes,
     // 路由模式
     mode: "history"
+    // mode: "hash",
 });
 
 export default router;

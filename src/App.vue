@@ -16,10 +16,10 @@
 
 <script>
 // 引入页面布局组件模块
-import Layout from "./components/Layout/Layout.vue";
+import Layout from "@/components/Layout/Layout.vue";
 
 // 引入侧边栏组件模块
-import SiteAside from "./components/SiteAside/SiteAside.vue";
+import SiteAside from "@/components/SiteAside/SiteAside.vue";
 
 export default {
   components: {
@@ -30,14 +30,10 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "./styles/common.less";
-@import "./styles/mixins.less";
-@import "./styles/var.less";
+@import "~@/styles/common.less";
+@import "~@/styles/mixins.less";
+@import "~@/styles/var.less";
 
-.app-container {
-  // width: 100vw;
-  // height: 100;
-}
 .left {
   width: 220px;
   height: 100vh;

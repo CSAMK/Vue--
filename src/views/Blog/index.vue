@@ -16,12 +16,12 @@ export default {
     };
   },
   async mounted() {
-    console.log(API);
+    // console.log(API);
 
     this.blogType = await API.getBlogType();
     // console.log(this.blogType);
     this.blog = await API.getBlog();
-    console.log(this.blog);
+    // console.log(this.blog);
   },
   methods: {
     // async getBlogType() {
