@@ -1,4 +1,10 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+module.exports = {
+    // 解决跨域问题
+    devServer: {
+        proxy: {
+            '/api': {
+                target: 'https://www.163.com/'
+            }
+        }
+    }
+};
